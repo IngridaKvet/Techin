@@ -7,6 +7,7 @@
 html{
     font-size: 62.5%; /* Sets base to 10px for easier calculation with rem */
     font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
 
 }
 
@@ -14,11 +15,44 @@ main{
     display: grid;
 }
 
+/* Header */ 
 .header{
     background-color: #d98265;
     height: 10rem; 
-    width: 100%;  
+    width: 100%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 15%;
 }
+
+.material-icons{
+    display: grid;
+    align-self: center;
+}
+
+nav{
+    display: grid;
+}
+
+.nav-link a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-self: center;
+}
+
+ul li{
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+
+/* Hero */
 
 .hero{
     display: grid;
