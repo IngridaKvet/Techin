@@ -82,19 +82,21 @@ body{
         flex-direction: column;
     }
 }
-  
+
 @media only screen and (max-width: 583px) {
+    .container{
+        box-sizing: border-box;
+        margin:0;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .img-container__mock-img{
+        padding: 3rem 2.5rem;
+    }
+
     .article__img-container{
         display: flex;
         flex-direction: column;
     }
 }
-
-@media only screen and (max-width: 520px) {
-    .container{
-        margin:0;
-        width: 100%;
-        padding: 2.4rem; 
-    }
-}
-
