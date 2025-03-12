@@ -8,7 +8,6 @@ html{
     font-size: 62.5%; /* Sets base to 10px for easier calculation with rem */
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
-
 }
 
 main{
@@ -37,7 +36,6 @@ nav{
 .nav-link a{
     color: #fff;
     text-decoration: none;
-    
 }
 
 ul{
@@ -51,15 +49,12 @@ ul li{
     font-size: 2rem;
 }
 
-
 /* Hero */
-
 .hero{
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 37.7rem);
 }
-
 
 .hero, .pets, .benefits-section{
     margin: 6.1rem;
@@ -72,14 +67,12 @@ ul li{
 .hero-titles-headline{
     font-size: 7rem;
     font-weight: 400;
-
 }
 
 .subheadline{
     font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 0.375rem;
-
 }
 
 .hero-titles, .hero-text{
@@ -90,9 +83,7 @@ ul li{
     width: 37.7rem;
     height: 48.3rem;
     object-fit: cover;
-
 }
-
 
 .hero-text p{
     font-size: 2rem;
@@ -100,13 +91,11 @@ ul li{
 }
 
 /* Pets section */
-
 .pets{
     display: grid;
     grid-template-columns: 62.1rem 62.1rem;
     grid-template-rows: 48.2rem 41rem;
     justify-content: center;
-
 }
 
 .pets-main-photo, .pets-main-photo__img{
@@ -160,7 +149,6 @@ ul li{
 }
 
 /* Benefits section */
-
 .benefits-section{
     display: grid;
     grid-template-columns: 34.4rem 34.6rem 42.9rem;
@@ -199,7 +187,6 @@ ul li{
     line-height: 180%;
     font-size: 1.8rem;
     text-align: center;
-
 }
 
 /* Vet clinic section */
@@ -208,19 +195,14 @@ ul li{
     display: grid;
     grid-template-columns: 33.8rem 45.1rem 33.8rem;
     background-color: #e5e5e5;
-   
     width: fit-content;
     justify-self: center;
     margin-bottom: 6.1rem;
-
-
-    
 }
 
 .vet-clinic__text{
     align-self: center;
 }
-
 
 .black-bg{
     background-color: #000;
@@ -229,7 +211,6 @@ ul li{
 .vet-clinic__headline{
     font-size: 4rem;
     margin-bottom: 2.5rem;
-
 }
 
 .vet-clinic__text .subheadline{
