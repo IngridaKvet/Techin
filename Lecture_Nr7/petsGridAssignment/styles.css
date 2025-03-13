@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+}
+
 html{
     font-size: 62.5%; /* Sets base to 10px for easier calculation with rem */
     font-family: "Inter", sans-serif;
