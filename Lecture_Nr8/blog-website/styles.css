@@ -24,6 +24,11 @@
     padding: 0;
 }
 
+img{
+    display: block;
+    max-inline-size: 100%;
+}
+
 /* Header */
 header{
     display: flex;
@@ -36,7 +41,7 @@ header{
 .header-wrapper{
     display: flex;
     justify-content: space-between;
-    width: min(100%, 1002px);
+    width: min(100%, 100.2rem);
     margin-inline: 3rem;
 }
 
@@ -84,6 +89,99 @@ header{
     text-decoration: underline;
 }
 
+/* Main */
+main{
+
+    margin-top: 5.4rem;
+    margin-bottom: 10.4rem;
+} 
+
+.article-section-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5.1rem;
+    
+
+    width: min(100%, 70.2rem);
+
+
+}
+
+
+
+
+.aside{
+    width: 24rem;
+    height: 24rem;
+    background-color: red;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+/* Articles */
+
+.article-card{
+    display: flex;
+    gap: 2.7rem;
+    width: min(100%, 70.2rem);
+    grid-column: 1 / 2;
+
+}
+
+.article__photo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    
+}
+
+.article__photo-img{
+    min-width: 19.8rem;
+    height: 24.2rem;
+    object-fit: cover;
+    margin-top: 8px;
+ 
+}
+
+.article__img-figcaption{
+    font-size: 1.4rem;
+    font-family: "Segoe UI", sans-serif;
+    color: #707070;
+}
+
+.article-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+}
+
+.article__headline{
+    font-size: 2.4rem;
+ 
+    color: #143774;
+    font-family: "Lora", serif;
+    font-weight: 400;
+
+    
+
+}
+
+.article__desription{
+    font-size: 1.8rem;
+    color: #707070;
+    font-weight: 300;
+
+}
+
+.article__link{
+    font-weight: 700;
+    color:#1792d2;
+    font-size: 1.4rem;
+    text-decoration: none;
+
+}
+
+
 
 
 
@@ -113,7 +211,6 @@ footer{
 
 }
 
-
 /* Media quieries */
 
 @media screen and (max-width: 827px) {
@@ -131,5 +228,22 @@ footer{
     .nav__link{
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 557px) {
+    .article-card{
+        flex-direction: column;
+        margin-inline: 2.1rem; 
+        width: auto;
+        gap: 1rem;
+    
+    }
+
+    .article__img-figcaption{
+        display: flex;
+        justify-content: end;
+        
+
     }
 }
