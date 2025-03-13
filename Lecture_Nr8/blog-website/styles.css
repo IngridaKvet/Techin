@@ -4,6 +4,10 @@
     src: url('fonts/Segoe\ UI.ttf') format("ttf");
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .uppercase{
     text-transform: uppercase;
 }
@@ -17,11 +21,12 @@
 }
 
 *{
-    font-size: 62.5%; /* Sets base to 10px for easier calculation with rem */
+    font-size: 62.5%; /* Sets base to 10px for easier calculation with rem */ 
     font-family: "Ubuntu", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    line-height: 2.8rem;
 }
 
 img{
@@ -91,40 +96,87 @@ header{
 
 /* Main */
 main{
-
+    display: grid;
+    grid-template-columns: 70.2rem 24rem;
     margin-top: 5.4rem;
     margin-bottom: 10.4rem;
+    justify-content: center;
+    column-gap: 5.1rem;
 } 
 
 .article-section-wrapper{
     display: flex;
     flex-direction: column;
     gap: 5.1rem;
-    
-
     width: min(100%, 70.2rem);
-
-
+    margin-bottom: 3rem;
 }
 
 
-
-
-.aside{
-    width: 24rem;
-    height: 24rem;
-    background-color: red;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+.aside-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    
+ 
 }
+
+
+/* Asides*/
+
+.aside-about-me, .aside-recent-posts{
+    border: 2rem solid #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    color: #143774;
+    padding: 1.5rem;
+    gap: 1.7rem;
+}
+
+.aside-headline{
+    font-size: 1.8rem;
+   
+    font-weight: 700;
+}
+
+.aside__photo-img{
+    width: 100%;
+    object-fit: cover;
+    display: inline;
+}
+
+.article__profile-figcaption{
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
 
 /* Articles */
+.article-card:first-child{
+    border-bottom: #707070 solid 1px;
+    padding-bottom: 5.1rem;
+}
+
+strong{
+    color: #707070;
+    font-weight: 700;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.main-article-link{
+    color: #1792d2;
+    font-size: inherit;
+    font-family: inherit;
+}
 
 .article-card{
     display: flex;
     gap: 2.7rem;
     width: min(100%, 70.2rem);
-    grid-column: 1 / 2;
 
 }
 
@@ -213,6 +265,39 @@ footer{
 
 /* Media quieries */
 
+
+@media screen and (min-width: 1038px) {
+    #main-article{
+       
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 1038px) {
+
+
+
+    main{
+        margin-inline: 2.1rem; 
+        grid-template-columns: 1fr;
+    }
+
+    .article-section-wrapper{
+        width: 100%;
+        align-items: center;
+        
+
+    }
+}
+
+
+
 @media screen and (max-width: 827px) {
     .header-wrapper{
         flex-direction: column;
@@ -229,12 +314,21 @@ footer{
         display: flex;
         justify-content: center;
     }
+
+    .aside__profile-photo{
+        display: flex;
+        flex-direction: column;
+        height: 25rem;
+    }
+
+    .aside__photo-img{
+        height: 75%;
+    }
 }
 
 @media screen and (max-width: 557px) {
     .article-card{
         flex-direction: column;
-        margin-inline: 2.1rem; 
         width: auto;
         gap: 1rem;
     
