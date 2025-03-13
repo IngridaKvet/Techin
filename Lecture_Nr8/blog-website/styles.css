@@ -1,0 +1,115 @@
+/* Universal */
+@font-face {
+    font-family: "Segoe UI";
+    src: url('fonts/Segoe\ UI.ttf') format("ttf");
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.no-wrap {
+    white-space: nowrap;
+    font-size: inherit;
+    color: inherit;
+    text-align: inherit;
+    font-family: inherit;
+}
+
+*{
+    font-size: 62.5%; /* Sets base to 10px for easier calculation with rem */
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header{
+    display: flex;
+    padding-top: 10.5rem;
+    padding-bottom: 10.5rem;
+    background-color: #f8f8f8;
+    justify-content: center;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: min(100%, 1002px);
+    margin-inline: 3rem;
+}
+
+.brand-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name__headline{
+    font-size: 3.3rem;
+    color: #143774;
+    font-family: "Lora", serif;
+    text-align: center;
+
+}
+
+.brand-name__subtext{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    color: #1792d2;
+    text-align: center;
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+  
+}
+
+.nav ul{
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+
+}
+
+.nav__link{
+    font-size: 1.6rem;
+    letter-spacing: 3.2px;
+    font-weight: 700;
+    color: #717171;
+    text-decoration: none;
+}
+
+.current-page{
+    text-decoration: underline;
+}
+
+
+
+
+
+@media screen and (max-width: 827px) {
+    .header-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.3rem;
+        
+        
+    }
+
+    .nav ul{
+        flex-direction: column;
+  
+     
+    }
+
+    .nav__link{
+        display: flex;
+        justify-content: center;
+    }
+
+}
